@@ -34,5 +34,5 @@ mkdir $fecha
 mysqldump -u 'unai' -p'1384001u.D' 'SGSSI' > /var/tmp/Backups/SGSSI/BD/$fecha/backup_SGSSI.sql 
 
 ## Después se ejecuta en la terminal --> crontab -e ##
-## Escribimos en el editor de texto lo siguiente --> 0 12 * * * ##
+## Escribimos en el editor de texto lo siguiente --> 0 12 * * *  /home/unai/Escritorio/backup.sh##
 # 1º posicion --> minutos # 2º posicion --> horas # 3º posicion --> dia del mes # 4º posicion --> mes  # 5º posicion --> dia de la semana 
