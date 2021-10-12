@@ -32,3 +32,7 @@ rsync -av --link-dest=/var/tmp/Backups/SGSSI/Sec/$fechaAnt . /var/tmp/Backups/SG
 cd /var/tmp/Backups/SGSSI/BD
 mkdir $fecha
 mysqldump -u 'unai' -p'1384001u.D' 'SGSSI' > /var/tmp/Backups/SGSSI/BD/$fecha/backup_SGSSI.sql 
+
+## Después se ejecuta en la terminal --> crontab -e ##
+## Escribimos en el editor de texto lo siguiente --> 0 12 * * * ##
+# 1º posicion --> minutos # 2º posicion --> horas # 3º posicion --> dia del mes # 4º posicion --> mes  # 5º posicion --> dia de la semana 
